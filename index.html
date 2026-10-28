@@ -3,430 +3,216 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Laiba Shahid | Data Science Portfolio</title>
+  <title>Laiba Shahid | Data Science Resume</title>
+  <meta name="description" content="Resume of Laiba Shahid, Data Science student and aspiring Data Analyst based in Lahore, Pakistan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+
   <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-logo">
-        <a href="#home">Laiba Shahid</a>
-      </div>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#home" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#skills" class="nav-link">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a href="#projects" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact" class="nav-link">Contact</a>
-        </li>
+  <header class="nav">
+    <nav class="nav__inner" aria-label="Main">
+      <a class="nav__brand" href="#top">Laiba Shahid</a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="nav-toggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header/Home -->
-  <header id="home" class="hero">
-    <div class="hero-content">
-      <div class="profile-section">
-        <div class="profile-pic-container">
-          <img src="yourphoto.jpg" alt="Laiba Shahid" class="profile-pic" />
-          <div class="profile-overlay"></div>
-        </div>
-        <div class="hero-text">
-          <h1 class="hero-title">
-            <span class="typing-text">Laiba Shahid</span>
-          </h1>
-          <p class="hero-subtitle">Data Science Student | Python & SQL Developer</p>
-          <p class="hero-description">Transforming data into actionable insights with cutting-edge analytics</p>
-          
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/laiba-s-a6a433321/" target="_blank" class="social-link">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/Laiba00shahid" target="_blank" class="social-link">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:laibashahid461@gmail.com" class="social-link">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
-          
-          <div class="cta-buttons">
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <div class="scroll-arrow"></div>
-    </div>
+    </nav>
   </header>
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p class="about-intro">
-            I'm a <strong>fourth-semester Data Science student</strong> passionate about translating complex data into actionable insights. My expertise lies in building predictive models, creating interactive dashboards, and developing data-driven web applications.
-          </p>
-          <p class="about-details">
-            With hands-on experience in machine learning algorithms and statistical analysis, I enjoy tackling challenging problems that require both technical precision and creative problem-solving.
-          </p>
-          
-          <div class="education">
-            <h3 class="subsection-title">
-              <i class="fas fa-graduation-cap"></i>
-              Education & Coursework
-            </h3>
-            <div class="coursework-grid">
-              <span class="course-item">Statistics & Probability</span>
-              <span class="course-item">Data Structures & Algorithms</span>
-              <span class="course-item">Machine Learning</span>
-              <span class="course-item">Database Systems</span>
-              <span class="course-item">Data Visualization</span>
-              <span class="course-item">Predictive Analytics</span>
-            </div>
-          </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <p class="eyebrow">Data Science · UET Lahore · 5th semester</p>
+      <h1 class="hero__title">Laiba<br />Shahid</h1>
+      <p class="hero__text">Aspiring Data Analyst who turns raw data into dashboards, models and decisions. Based in Lahore, Pakistan.</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#projects">View projects</a>
+        <a class="btn btn--line" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section reveal" id="about">
+      <h2 class="section__label">01 · About</h2>
+      <div class="section__body">
+        <p class="lead">Data Science student with hands-on experience in Power BI, Excel, SQL and Python-based EDA.</p>
+        <p class="muted">I build machine learning models for churn prediction, lifetime value forecasting and anomaly detection, and an AI security layer that protects RAG pipelines. I completed the 50-hour Data Analyst in Power BI career track on DataCamp.</p>
+
+        <ul class="stats">
+          <li class="card"><strong>4</strong><span>Projects built</span></li>
+          <li class="card"><strong>50h</strong><span>Power BI career track</span></li>
+          <li class="card"><strong>2</strong><span>DataCamp career tracks</span></li>
+          <li class="card"><strong>5th</strong><span>Semester, BS Data Science</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section reveal" id="skills">
+      <h2 class="section__label">02 · Skills</h2>
+      <div class="section__body" data-tabs>
+        <div class="tabs" role="tablist" aria-label="Skill categories">
+          <button class="tab" role="tab" id="tab-bi" aria-controls="panel-bi" aria-selected="true">Analytics &amp; BI</button>
+          <button class="tab" role="tab" id="tab-prog" aria-controls="panel-prog" aria-selected="false" tabindex="-1">Programming &amp; Data</button>
+          <button class="tab" role="tab" id="tab-ml" aria-controls="panel-ml" aria-selected="false" tabindex="-1">Machine Learning</button>
+          <button class="tab" role="tab" id="tab-tools" aria-controls="panel-tools" aria-selected="false" tabindex="-1">Tools &amp; Frameworks</button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-bi" aria-labelledby="tab-bi">
+          <p class="muted">Dashboards and reporting, backed by the 50-hour Data Analyst in Power BI career track on DataCamp.</p>
+          <ul class="chips">
+            <li>Power BI</li><li>Excel</li><li>Interactive dashboards</li><li>Matplotlib</li><li>Seaborn</li>
+          </ul>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-prog" aria-labelledby="tab-prog" hidden>
+          <p class="muted">Python and SQL for exploration, data pipelines and backends.</p>
+          <ul class="chips">
+            <li>Python</li><li>SQL (MySQL, PostgreSQL)</li><li>EDA in Python</li><li>Pandas</li><li>NumPy</li>
+          </ul>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-ml" aria-labelledby="tab-ml" hidden>
+          <p class="muted">Predictive models for customers and equipment, plus text classification for LLM security.</p>
+          <ul class="chips">
+            <li>Churn prediction</li><li>Lifetime value forecasting</li><li>Anomaly detection</li><li>Scikit-learn</li><li>DeBERTa</li><li>SetFit</li>
+          </ul>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-tools" aria-labelledby="tab-tools" hidden>
+          <p class="muted">The stack behind the retail, Aegis and Sazon projects.</p>
+          <ul class="chips">
+            <li>FastAPI</li><li>LangChain</li><li>FAISS</li><li>Next.js</li><li>React</li><li>Supabase</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section skills-section">
-    <div class="container">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-container">
-        
-        <div class="skill-category">
-          <h3 class="category-title">
-            <i class="fab fa-python"></i>
-            Programming & Data Science
-          </h3>
-          <div class="skills-grid">
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">Python</span>
-                <span class="skill-level">90%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="90"></div>
-              </div>
-              <div class="skill-tags">
-                <span class="tag">NumPy</span>
-                <span class="tag">Pandas</span>
-                <span class="tag">Scikit-learn</span>
-              </div>
-            </div>
-            
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">SQL</span>
-                <span class="skill-level">85%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="85"></div>
-              </div>
-              <div class="skill-tags">
-                <span class="tag">MySQL</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">Supabase</span>
-              </div>
-            </div>
-            
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">Machine Learning</span>
-                <span class="skill-level">80%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="80"></div>
-              </div>
-              <div class="skill-tags">
-                <span class="tag">Regression</span>
-                <span class="tag">Classification</span>
-                <span class="tag">Clustering</span>
-              </div>
-            </div>
-          </div>
+    <!-- Projects -->
+    <section class="section reveal" id="projects">
+      <h2 class="section__label">03 · Projects</h2>
+      <div class="section__body projects" data-tabs>
+
+        <div class="project-list" role="tablist" aria-label="Projects" aria-orientation="vertical">
+          <button class="project-tab" role="tab" id="ptab-1" aria-controls="pp-1" aria-selected="false" tabindex="-1">
+            <span class="project-tab__num">01</span>
+            <span><strong>Retail Analytics Platform</strong><small>Analytics · Machine learning</small></span>
+          </button>
+          <button class="project-tab" role="tab" id="ptab-2" aria-controls="pp-2" aria-selected="false" tabindex="-1">
+            <span class="project-tab__num">02</span>
+            <span><strong>Industrial Equipment Anomaly Detection</strong><small>Data pipelines · Predictive maintenance</small></span>
+          </button>
+          <button class="project-tab" role="tab" id="ptab-3" aria-controls="pp-3" aria-selected="true">
+            <span class="project-tab__num">03</span>
+            <span><strong>Aegis: RAG Injection Shield</strong><small>AI security · NLP</small></span>
+          </button>
+          <button class="project-tab" role="tab" id="ptab-4" aria-controls="pp-4" aria-selected="false" tabindex="-1">
+            <span class="project-tab__num">04</span>
+            <span><strong>Sazon: Food Delivery System</strong><small>Full-stack application</small></span>
+          </button>
         </div>
 
-        <div class="skill-category">
-          <h3 class="category-title">
-            <i class="fas fa-chart-line"></i>
-            Data Visualization
-          </h3>
-          <div class="skills-grid">
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">Power BI</span>
-                <span class="skill-level">85%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="85"></div>
-              </div>
-            </div>
-            
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">Tableau</span>
-                <span class="skill-level">75%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="75"></div>
-              </div>
-            </div>
-            
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">Matplotlib/Seaborn</span>
-                <span class="skill-level">90%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="90"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="project-panels">
 
-        <div class="skill-category">
-          <h3 class="category-title">
-            <i class="fas fa-code"></i>
-            Web Development
-          </h3>
-          <div class="skills-grid">
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">JavaScript/React</span>
-                <span class="skill-level">80%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="80"></div>
-              </div>
+          <article class="project card" role="tabpanel" id="pp-1" aria-labelledby="ptab-1" hidden>
+            <div class="project__top">
+              <span class="eyebrow">Analytics · Machine learning</span>
+              <span class="badge">2,000 records</span>
             </div>
-            
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">Next.js</span>
-                <span class="skill-level">75%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="75"></div>
-              </div>
-            </div>
-            
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">Flask</span>
-                <span class="skill-level">70%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="70"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
+            <h3>Retail Analytics Platform</h3>
+            <p>A retail analytics platform with interactive BI dashboards. Customer churn prediction and lifetime value models were trained on 2,000 customer records.</p>
+            <ul class="tags"><li>Next.js</li><li>Supabase (PostgreSQL)</li><li>Machine learning</li><li>BI dashboards</li></ul>
+          </article>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-grid">
-        
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="fas fa-chart-bar"></i>
+          <article class="project card" role="tabpanel" id="pp-2" aria-labelledby="ptab-2" hidden>
+            <div class="project__top">
+              <span class="eyebrow">Data pipelines · Predictive maintenance</span>
+              <span class="badge">80% precision</span>
             </div>
-            <div class="project-meta">
-              <h3 class="project-title">Gadget Familia</h3>
-              <p class="project-subtitle">Digital Retail Intelligence Platform</p>
-            </div>
-          </div>
-          <p class="project-description">
-            Developed a comprehensive retail analytics platform using <strong>Next.js</strong> and <strong>Supabase (PostgreSQL)</strong>. Implemented advanced machine learning models for customer churn prediction and lifetime value forecasting, along with interactive BI dashboards.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">Next.js</span>
-            <span class="tech-tag">PostgreSQL</span>
-            <span class="tech-tag">Machine Learning</span>
-            <span class="tech-tag">Data Analytics</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Mareeha-Nadeem/Electronics" target="_blank" class="project-link">
-              <i class="fab fa-github"></i>
-              View Code
-            </a>
-          </div>
-        </div>
+            <h3>Industrial Equipment Anomaly Detection</h3>
+            <p>Real-time monitoring of industrial equipment with automated data pipelines, predictive maintenance alerts and efficiency optimization algorithms.</p>
+            <ul class="tags"><li>Python</li><li>Data pipelines</li><li>Anomaly detection</li><li>Predictive maintenance</li></ul>
+            <a class="project__link" href="https://github.com/Laiba00shahid/Analysis-Systems" target="_blank" rel="noopener">github.com/Laiba00shahid/Analysis-Systems ↗</a>
+          </article>
 
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="fas fa-cogs"></i>
+          <article class="project card" role="tabpanel" id="pp-3" aria-labelledby="ptab-3">
+            <div class="project__top">
+              <span class="eyebrow">AI security · NLP</span>
+              <span class="badge">70% blocked · 20% false positives</span>
             </div>
-            <div class="project-meta">
-              <h3 class="project-title">Power Analysis System</h3>
-              <p class="project-subtitle">Predictive Maintenance Platform</p>
-            </div>
-          </div>
-          <p class="project-description">
-            Built an intelligent system for real-time monitoring and anomaly detection of industrial equipment. Features automated data pipelines, predictive maintenance alerts, and efficiency optimization algorithms.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Anomaly Detection</span>
-            <span class="tech-tag">IoT Analytics</span>
-            <span class="tech-tag">Automation</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Laiba00shahid/Analysis-Systems" target="_blank" class="project-link">
-              <i class="fab fa-github"></i>
-              View Code
-            </a>
-          </div>
-        </div>
+            <h3>Aegis: RAG Injection Shield</h3>
+            <p>An AI/ML defense for RAG pipelines against prompt injection and data exfiltration. It uses chunk-level risk filtering and output validation to improve LLM safety and robustness.</p>
+            <ul class="tags"><li>Python</li><li>DeBERTa</li><li>SetFit</li><li>FAISS</li><li>LangChain</li><li>CrossEncoder</li></ul>
+            <a class="project__link" href="https://github.com/Laiba00shahid/AEGIS_Laiba" target="_blank" rel="noopener">github.com/Laiba00shahid/AEGIS_Laiba ↗</a>
+          </article>
 
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="fas fa-shield-alt"></i>
+          <article class="project card" role="tabpanel" id="pp-4" aria-labelledby="ptab-4" hidden>
+            <div class="project__top">
+              <span class="eyebrow">Full-stack application</span>
             </div>
-            <div class="project-meta">
-              <h3 class="project-title">Aegis</h3>
-              <p class="project-subtitle">RAG Injection Shield</p>
-            </div>
-          </div>
-          <p class="project-description">
-            Built an AI/ML-based security system that protects RAG pipelines from <strong>prompt injection</strong> and <strong>data exfiltration</strong>. Implements chunk-level risk filtering and output validation to improve LLM safety and robustness.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">DeBERTa</span>
-            <span class="tech-tag">SetFit</span>
-            <span class="tech-tag">FAISS</span>
-            <span class="tech-tag">LangChain</span>
-          </div>
-          <div class="project-links">
-            <!-- TODO: replace "#" below with your Aegis GitHub link -->
-            <a href="https://github.com/Laiba00shahid/AEGIS_Laiba" target="_blank" class="project-link">
-              <i class="fab fa-github"></i>
-              View Code
-            </a>
-          </div>
-        </div>
+            <h3>Sazon: Food Delivery System</h3>
+            <p>A complete food delivery system with a full Python backend, a MySQL database and a responsive React frontend.</p>
+            <ul class="tags"><li>Python</li><li>MySQL</li><li>React</li></ul>
+            <a class="project__link" href="https://github.com/Laiba00shahid/Sazon" target="_blank" rel="noopener">github.com/Laiba00shahid/Sazon ↗</a>
+          </article>
 
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="fas fa-utensils"></i>
-            </div>
-            <div class="project-meta">
-              <h3 class="project-title">Sazon</h3>
-              <p class="project-subtitle">Food Delivery Interface</p>
-            </div>
-          </div>
-          <p class="project-description">
-            Designed and developed a responsive food delivery application frontend using <strong>React</strong> and modern JavaScript. Emphasized intuitive UX/UI design with dynamic interactions and seamless user experience.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">UI/UX Design</span>
-            <span class="tech-tag">Responsive Design</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Laiba00shahid/Sazon" target="_blank" class="project-link">
-              <i class="fab fa-github"></i>
-              View Code
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section contact-section">
-    <div class="container">
-      <h2 class="section-title">Let's Connect</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <p class="contact-intro">
-            Ready to collaborate on exciting data science projects or discuss opportunities? 
-            I'm always eager to connect with fellow data enthusiasts and potential collaborators.
-          </p>
-          
-          <div class="contact-methods">
-            <a href="mailto:laibashahid461@gmail.com" class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="contact-details">
-                <h3>Email</h3>
-                <p>laibashahid461@gmail.com</p>
-              </div>
-            </a>
-            
-            <a href="https://www.linkedin.com/in/laiba-s-a6a433321/" target="_blank" class="contact-item">
-              <div class="contact-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </div>
-              <div class="contact-details">
-                <h3>LinkedIn</h3>
-                <p>Connect professionally</p>
-              </div>
-            </a>
-            
-            <a href="https://github.com/Laiba00shahid" target="_blank" class="contact-item">
-              <div class="contact-icon">
-                <i class="fab fa-github"></i>
-              </div>
-              <div class="contact-details">
-                <h3>GitHub</h3>
-                <p>Explore my repositories</p>
-              </div>
-            </a>
-          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
+    <!-- Education -->
+    <section class="section reveal" id="education">
+      <h2 class="section__label">04 · Education</h2>
+      <div class="section__body edu">
+        <div class="card">
+          <p class="eyebrow">Degree</p>
+          <h3>BS Data Science</h3>
+          <p class="muted">University of Engineering and Technology (UET), Lahore</p>
+          <p class="small">5th semester · Expected graduation 2028</p>
+        </div>
+        <div class="card">
+          <p class="eyebrow">Certifications</p>
+          <h3>Data Analyst in Power BI</h3>
+          <p class="muted">DataCamp · 50-hour career track</p>
+          <h3 class="spaced">EDA in Python</h3>
+          <p class="muted">DataCamp · career track</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact reveal" id="contact">
+      <p class="eyebrow">05 · Contact</p>
+      <h2 class="contact__title">Let's talk<br />about data.</h2>
+      <p class="muted contact__text">Open to junior data analyst roles and data projects. The fastest way to reach me is email.</p>
+      <a class="btn btn--solid" href="mailto:laibashahid461@gmail.com">laibashahid461@gmail.com</a>
+
+      <ul class="contact__list">
+        <li><a href="https://www.linkedin.com/in/laiba-s-a6a433321/" target="_blank" rel="noopener"><span>LinkedIn</span><em>linkedin.com/in/laiba-s-a6a433321 ↗</em></a></li>
+        <li><a href="https://github.com/Laiba00shahid" target="_blank" rel="noopener"><span>GitHub</span><em>github.com/Laiba00shahid ↗</em></a></li>
+        <li><a href="tel:+923297296457"><span>Phone</span><em>+92 329 7296457</em></a></li>
+        <li><div><span>Location</span><em>Lahore, Pakistan</em></div></li>
+      </ul>
+    </section>
+
+  </main>
+
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2025 Laiba Shahid. Crafted with passion for data science.</p>
-        <div class="footer-links">
-          <a href="#home">Back to Top</a>
-        </div>
-      </div>
+    <div class="footer__inner">
+      <span>&copy; <span id="year">2026</span> Laiba Shahid</span>
+      <a href="#top">Back to top ↑</a>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
